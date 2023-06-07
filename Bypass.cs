@@ -14,6 +14,7 @@ class Program
         {
             await Request(url);
             Console.WriteLine($"\nBypassed {url}");
+            await Task.Delay(1000);
         }
 
         var response = await Request(urls[^1]);
